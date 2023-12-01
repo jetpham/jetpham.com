@@ -5,12 +5,29 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-sway-rotate infinite 4s ease;
+}
+
+@keyframes App-logo-sway-rotate {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  25% {
+    transform: translateX(50%) rotate(360deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-0deg);
+  }
+  75% {
+    transform: translateX(50%) rotate(-360deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(0deg);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 1s linear;
-  }
+  /* Other styles for users who haven't set a preference for reduced motion */
 }
 
 .App-header {
@@ -29,10 +46,13 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: translateX(-50%);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
