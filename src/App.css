@@ -2,36 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  animation: App-logo-sway-rotate infinite 4s ease;
-}
-
-@keyframes App-logo-sway-rotate {
-  0% {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  25% {
-    transform: translateX(50%) rotate(360deg);
-  }
-  50% {
-    transform: translateX(-50%) rotate(-0deg);
-  }
-  75% {
-    transform: translateX(50%) rotate(-360deg);
-  }
-  100% {
-    transform: translateX(-50%) rotate(0deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  /* Other styles for users who haven't set a preference for reduced motion */
-}
-
 .App-header {
-  background-color: #282c34;
+  background-image: url("../public/Vase\ of\ Flowers.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #261e17;
+  background-size: cover;
+  background-attachment: local, scroll;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,18 +19,15 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 36Days;
+  src: url("../public/36Days-Regular.ttf");
 }
 
-@keyframes App-logo-spin {
-  0% {
-    transform: translateX(-50%);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.Title-Name {
+  font-family: 36Days;
+  color: #205062;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
